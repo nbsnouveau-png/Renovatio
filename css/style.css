@@ -1,0 +1,471 @@
+.hero-section {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/icons/back1.jpg'); /* ← Правильный путь */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: 56px;
+}
+
+
+/* Дополнительные отступы для секций */
+section {
+    padding: 80px 0;
+}
+
+/* Стили для навигации */
+.navbar-brand {
+    font-size: 2rem;
+}
+.navbar {
+    background-color: #061b38 !important;}
+
+.btn-primary {
+    background-color: #2856a6; /* Темно-серый/синий */
+    border-color: #2856a6;
+    padding: 12px 30px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #91a6ca; /* Более светлый при наведении */
+    border-color: #91a6ca;
+}
+/* Стили для секции Услуги */
+.services-section {
+    background-color: #f8f9fa !important;
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+.service-icon {
+    font-size: 3rem;
+    opacity: 0.9;
+}
+
+.card-title {
+    color: #1a365d; /* Цвет как у навигации */
+    margin-bottom: 1rem;
+}
+/* Стили для иконок услуг */
+.service-icon img {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(90%) saturate(1000%) hue-rotate(195deg); /* Синий цвет как у навигации */
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon img {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(90%) saturate(1000%) hue-rotate(195deg); /* Более светлый синий при наведении */
+    transform: scale(1.1);
+}
+/* Стили для секции Портфолио */
+.portfolio-section {
+    background-color: #ffffff;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 3rem;
+}
+
+.filter-buttons .btn {
+    border-radius: 25px;
+    padding: 10px 25px;
+    border: 2px solid #1a365d;
+    color: #1a365d;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-buttons .btn:hover {
+    background-color: #1a365d;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.filter-buttons .btn.active {
+    background-color: #1a365d;
+    border-color: #1a365d;
+    color: white;
+}
+
+/* Галерея портфолио */
+.portfolio-grid {
+    min-height: 400px; /* Чтобы секция не "прыгала" при фильтрации */
+}
+
+.portfolio-item {
+    transition: all 0.4s ease;
+}
+
+.portfolio-item.hidden {
+    display: none;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.portfolio-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(26, 54, 93, 0.2);
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-image {
+    transform: scale(1.08);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(26, 54, 93, 0.95));
+    color: white;
+    padding: 2rem 1.5rem 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    transform: translateY(0);
+}
+
+.portfolio-overlay h5 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-overlay p {
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+/* Стили для секции О компании */
+.about-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.about-features {
+    margin: 2rem 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.feature-icon {
+    background-color: #1a365d;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.feature-text {
+    line-height: 1.5;
+}
+
+.stats-row {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+}
+
+.stat-number {
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.about-image img {
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.02);
+}
+/* Стили для секции Контакты */
+.contacts-section {
+    background-color: #f8f9fa !important;
+}
+
+.contact-info {
+    border-left: 4px solid #1a365d;
+}
+
+.contact-item {
+    padding: 0.5rem 0;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+
+.contact-item h6 {
+    color: #1a365d;
+    margin-bottom: 0.3rem;
+}
+
+.contact-item a {
+    color: #495057;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #1a365d;
+}
+
+/* Социальные ссылки */
+.social-links {
+    border-top: 1px solid #e9ecef;
+    padding-top: 1.5rem;
+}
+
+.social-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 25px;
+    color: #495057;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.social-link:hover {
+    background-color: #1a365d;
+    color: white;
+    border-color: #1a365d;
+    transform: translateY(-2px);
+}
+
+/* Карта */
+/* Стили для статичной карты */
+.map-image-link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.map-image-link:hover {
+    transform: scale(1.01);
+}
+
+.map-image-link img {
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 54, 93, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.map-image-link:hover .map-overlay {
+    opacity: 1;
+}
+
+.map-overlay-content {
+    text-align: center;
+    color: white;
+}
+
+.map-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.map-text {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+/* Быстрая форма */
+.quick-form {
+    border: 1px solid #e9ecef;
+}
+
+.quick-form .form-control {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.quick-form .form-control:focus {
+    border-color: #1a365d;
+    box-shadow: 0 0 0 0.2rem rgba(26, 54, 93, 0.1);
+}
+/* Стили для футера */
+.footer {
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%) !important;
+}
+
+.footer-brand h4 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    color: #cbd5e0;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.footer-contacts small {
+    color: #a0aec0;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.footer-links {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link {
+    color: #cbd5e0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+/* Социальные ссылки в футере */
+.social-links-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-link-footer {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: #cbd5e0;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.social-link-footer:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+/* Нижняя часть футера */
+.footer-bottom {
+    border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.legal-link {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-link:hover {
+    color: #ffffff;
+}
+
+/* Стили для страниц политики и соглашения */
+/* Стили для текста соглашения */
+.agreement-text {
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.agreement-text p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.agreement-text .ms-4 {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.agreement-text .ms-4::before {
+    content: "•";
+    position: absolute;
+    left: -1rem;
+    color: #1a365d;
+    font-weight: bold;
+}
+/* Хлебные крошки */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb-item a {
+    color: #1a365d;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+}

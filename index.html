@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovatio|Профессиональный ремонт под ключ</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/paint-roller.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <strong>Renovatio</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Портфолио</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Главный экран -->
+<section class="hero-section">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold text-white mb-4">Профессиональный ремонт под ключ</h1>
+                <p class="lead text-white mb-5">От квартир до коммерческих объектов. Качественно, быстро, с гарантией.</p>
+                <!-- Кнопка, которая открывает модальное окно -->
+                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#calculationModal">
+                    Рассчитать стоимость
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Секция Услуги -->
+<section id="services" class="services-section py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold mb-3">Наши услуги</h2>
+                <p class="lead">Полный спектр ремонтных работ для квартир и коммерческих помещений</p>
+            </div>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            <!-- Услуга 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <div class="card-body text-center p-4">
+                        <div class="service-icon mb-3">
+                            <img src="images/icons/paint-roller.svg" alt="Иконка косметического ремонта" width="60" height="60">
+                        </div>
+                        <h5 class="card-title fw-bold">Косметический ремонт</h5>
+                        <p class="card-text">Обновление интерьера без изменения планировки. Идеально для быстрого преображения пространства.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Услуга 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <div class="card-body text-center p-4">
+                        <div class="service-icon mb-3">
+                            <img src="images/icons/building-materials.svg" alt="Иконка капитального ремонта" width="60" height="60">
+                        </div>
+                        <h5 class="card-title fw-bold">Капитальный ремонт</h5>
+                        <p class="card-text">Полная перепланировка с заменой инженерных систем. Комплексный подход под ключ.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Услуга 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <div class="card-body text-center p-4">
+                        <div class="service-icon mb-3">
+                            <img src="images/icons/building.svg" alt="Иконка коммерческого ремонта" width="60" height="60">
+                        </div>
+                        <h5 class="card-title fw-bold">Коммерческий ремонт</h5>
+                        <p class="card-text">Ремонт офисов, магазинов, ресторанов. Соблюдение сроков и бизнес-требований.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Секция Портфолио -->
+<section id="portfolio" class="portfolio-section py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold mb-3">Наши работы</h2>
+                <p class="lead">Реализованные проекты ремонта квартир и коммерческих помещений</p>
+            </div>
+        </div>
+
+        <!-- Фильтры -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <div class="filter-buttons">
+                    <button class="btn btn-outline-primary active" data-filter="all">Все работы</button>
+                    <button class="btn btn-outline-primary" data-filter="residential">Дома и квартиры</button>
+                    <button class="btn btn-outline-primary" data-filter="commercial">Коммерческие</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Галерея работ - 3 изображения -->
+        <div class="row g-4 portfolio-grid justify-content-center">
+            <!-- Работа 1 -->
+            <div class="col-md-6 col-lg-4 portfolio-item" data-category="residential">
+                <div class="portfolio-card">
+                    <img src="images/portfolio/apart1.jpeg" class="portfolio-image" alt="Ремонт квартиры">
+                    <div class="portfolio-overlay">
+                        <h5>Квартира на ул.Чекменева, 34</h5>
+                        <p>Косметический ремонт</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Работа 2 -->
+            <div class="col-md-6 col-lg-4 portfolio-item" data-category="residential">
+                <div class="portfolio-card">
+                    <img src="images/portfolio/house.jpeg" class="portfolio-image" alt="Ремонт дома">
+                    <div class="portfolio-overlay">
+                        <h5>Частный дом</h5>
+                        <p>Капитальный ремонт</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Работа 3 -->
+            <div class="col-md-6 col-lg-4 portfolio-item" data-category="commercial">
+                <div class="portfolio-card">
+                    <img src="images/portfolio/office.jpeg" class="portfolio-image" alt="Ремонт офиса">
+                    <div class="portfolio-overlay">
+                        <h5>Офисный центр</h5>
+                        <p>Коммерческий ремонт</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Секция О компании -->
+<section id="about" class="about-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold mb-4">Компания Renovatio</h2>
+                <p class="lead mb-4">Более 10 лет мы превращаем помещения в пространства, где хочется жить и работать.</p>
+                
+                <div class="about-features">
+                    <div class="feature-item mb-3">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <strong>Опыт работы</strong> - более 180 успешных проектов
+                        </div>
+                    </div>
+                    <div class="feature-item mb-3">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <strong>Гарантия качества</strong> - 12 месяцев на все виды работ
+                        </div>
+                    </div>
+                    <div class="feature-item mb-3">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <strong>Фиксированные сроки</strong> - соблюдаем договоренности
+                        </div>
+                    </div>
+                    <div class="feature-item mb-3">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <strong>Прозрачная смета</strong> - без скрытых платежей
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-row mt-5">
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <div class="stat-number display-6 fw-bold text-primary">180+</div>
+                            <div class="stat-label">Проектов</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-number display-6 fw-bold text-primary">10+</div>
+                            <div class="stat-label">Лет опыта</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-number display-6 fw-bold text-primary">98%</div>
+                            <div class="stat-label">Довольных клиентов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="about-image">
+                    <img src="images/team.jpg" alt="Команда Renovatio" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Секция Контакты -->
+<section id="contacts" class="contacts-section py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold mb-3">Контакты</h2>
+                <p class="lead">Свяжитесь с нами для бесплатной консультации и расчета стоимости</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Контактная информация -->
+            <div class="col-lg-4 mb-4">
+                <div class="contact-info bg-white rounded-3 shadow-sm p-4 h-100">
+                    <h4 class="mb-4">Контактная информация</h4>
+                    
+                    <div class="contact-item d-flex align-items-start mb-4">
+                        <div class="contact-icon me-3">
+                            📍
+                        </div>
+                        <div>
+                            <h6 class="fw-bold">Адрес</h6>
+                            <p class="mb-0">г. Сочи</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item d-flex align-items-start mb-4">
+                        <div class="contact-icon me-3">
+                            📞
+                        </div>
+                        <div>
+                            <h6 class="fw-bold">Телефон</h6>
+                            <p class="mb-0">
+                                <a href="tel:+79991234567" class="text-decoration-none">+7 (999) 123-45-67</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item d-flex align-items-start mb-4">
+                        <div class="contact-icon me-3">
+                            ✉️
+                        </div>
+                        <div>
+                            <h6 class="fw-bold">Email</h6>
+                            <p class="mb-0">
+                                <a href="mailto:info@renovatio.ru" class="text-decoration-none">info@renovatio.ru</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item d-flex align-items-start mb-4">
+                        <div class="contact-icon me-3">
+                            🕒
+                        </div>
+                        <div>
+                            <h6 class="fw-bold">Время работы</h6>
+                            <p class="mb-0">Пн-Пт: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <!-- Социальные сети -->
+                    <div class="social-links mt-4">
+                        <h6 class="fw-bold mb-3">Мы в соцсетях</h6>
+                        <div class="d-flex gap-3">
+                            <a href="https://t.me/renovatiopro" class="social-link">✉️ Telegram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="col-lg-8">
+    <div class="contact-map rounded-3 shadow-sm overflow-hidden">
+        <a href="https://yandex.ru/maps/geo/sochi/53166566/?ll=39.580041%2C43.713351&z=9.57" target="_blank" class="map-image-link">
+            <img src="images/map.jpg" alt="Карта проезда к Renovatio" class="img-fluid w-100">
+            <div class="map-overlay">
+                <div class="map-overlay-content">
+                    <span class="map-icon">🗺️</span>
+                    <span class="map-text">Нажмите для открытия в Яндекс.Картах</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+                <!-- Быстрая форма связи -->
+                <div class="quick-form bg-white rounded-3 shadow-sm p-4 mt-4">
+                    <h5 class="mb-3">Быстрая заявка</h5>
+                    <form id="quickContactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" placeholder="Телефон" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="3" placeholder="Сообщение"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100">Отправить заявку</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Модальное окно для расчета стоимости -->
+<div class="modal fade" id="calculationModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Рассчитать стоимость ремонта</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="calculationForm">
+                    <div class="mb-3">
+                        <label for="userName" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="userName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="userPhone" class="form-label">Телефон</label>
+                        <input type="tel" class="form-control" id="userPhone" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agreeCheck" required>
+                        <label class="form-check-label" for="agreeCheck">
+                            Я согласен на <a href="user-agreement.html" class="text-decoration-none">обработку персональных данных</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Футер -->
+<footer class="footer bg-dark text-white pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+            <!-- Колонка 1 - О компании -->
+            <div class="col-lg-4 mb-4">
+                <div class="footer-brand mb-3">
+                    <h4 class="fw-bold">Renovatio</h4>
+                </div>
+                <p class="footer-text">Профессиональный ремонт помещений под ключ. Превращаем ваши идеи в реальность с 2015 года.</p>
+                <div class="footer-contacts">
+                    <div class="contact-small mb-1">
+                        <small>📞 +7 (999) 123-45-67</small>
+                    </div>
+                    <div class="contact-small mb-1">
+                        <small>✉️ info@renovatio.ru</small>
+                    </div>
+                    <div class="contact-small">
+                        <small>📍 г. Сочи</small>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Колонка 2 - Услуги -->
+            <div class="col-lg-2 mb-4">
+                <h5 class="footer-title mb-3">Услуги</h5>
+                <ul class="footer-links list-unstyled">
+                    <li class="mb-2"><a href="#services" class="footer-link">Косметический ремонт</a></li>
+                    <li class="mb-2"><a href="#services" class="footer-link">Капитальный ремонт</a></li>
+                    <li class="mb-2"><a href="#services" class="footer-link">Коммерческий ремонт</a></li>
+                </ul>
+            </div>
+
+            <!-- Колонка 3 - Навигация -->
+            <div class="col-lg-2 mb-4">
+                <h5 class="footer-title mb-3">Навигация</h5>
+                <ul class="footer-links list-unstyled">
+                    <li class="mb-2"><a href="#services" class="footer-link">Услуги</a></li>
+                    <li class="mb-2"><a href="#portfolio" class="footer-link">Портфолио</a></li>
+                    <li class="mb-2"><a href="#about" class="footer-link">О компании</a></li>
+                    <li class="mb-2"><a href="#contacts" class="footer-link">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- Колонка 4 - Соцсети и контакты -->
+            <div class="col-lg-4 mb-4">
+                <h5 class="footer-title mb-3">Свяжитесь с нами</h5>
+                <div class="social-links-footer mb-4">
+                    <a href="https://t.me/renovatiopro" class="social-link">✉️ Telegram</a>
+                </div>
+                
+                <!-- Кнопка для быстрой связи -->
+                <div class="quick-contact">
+                    <a href="#calculationModal" class="btn btn-outline-light btn-sm" data-bs-toggle="modal">
+                        💬 Бесплатная консультация
+                    </a>
+                </div>
+            </div>
+        </div> <!-- Закрывающий div для .row -->
+
+        <!-- Нижняя часть футера -->
+        <div class="footer-bottom border-top pt-4 mt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 small">&copy; 2025 Renovatio. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-legal-links">
+    <a href="privacy-policy.html" class="legal-link me-3 small">Политика конфиденциальности</a>
+    <a href="user-agreement.html" class="legal-link small">Пользовательское соглашение</a>
+</div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Закрывающий div для .container -->
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
